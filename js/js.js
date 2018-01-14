@@ -230,8 +230,7 @@ facil.onclick=function(){
 }
 
 function apretarAlien(){
-	var click=1;
-
+var click=1;
 document.getElementById("alien").onclick=function(){
 click++;	
 if(click%2==0){
@@ -240,9 +239,7 @@ motorOn();
 else{
 motorOff();	
 }
-
 }
-
 }
 
 
