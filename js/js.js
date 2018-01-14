@@ -230,12 +230,19 @@ facil.onclick=function(){
 }
 
 function apretarAlien(){
-document.getElementById("alien").onmousedown=function(){	
-motorOn();	
+	var click=1;
+
+document.getElementById("alien").onclick=function(){
+click++;	
+if(click%2==0){
+motorOn();		
+}	
+else{
+motorOff();	
 }
-document.getElementById("alien").onmouseup=function(){	
-motorOff();
+
 }
+
 }
 
 
