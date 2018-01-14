@@ -6,6 +6,7 @@ var timer=null;
 var pausa=false;
 var timerFuel=null;
 var aux;
+var encendido=false;
 var explotar=false;
 var dificultad=5;
 //NAVE
@@ -27,13 +28,14 @@ window.onload = function(){
 	combustible = document.getElementById("fuel");
     intentos=document.getElementById("intentos");
     funcionalidadGeneral();
+    document.getElementById("invisible").style.display="none";
     document.getElementById("naves").src="img/nave_sin_fuego.png";
 	//definición de eventos
 	
     	
 	//encender/apagar el motor al hacer click en la pantalla
 	document.onkeydown = function () {
- 	  if (a==g ){
+ 	  if (a==g){
   		motorOn();
  	  } else{
   		motorOff();
@@ -55,6 +57,7 @@ function start(){
 function stop(){
 	clearInterval(timer);
 	clearInterval(timerFuel);
+
 }
 
 function moverNave(){
@@ -102,16 +105,15 @@ function moverNave(){
 }
 function motorOn(){
 	//el motor da aceleración a la nave
-	a=-g;
+	
 	//mientras el motor esté activado gasta combustible, el motor no gasta combustible si la nave ha aterrizado.
-	if (timerFuel==null && y<70){
+	if (timerFuel==null && y<70 && pausa==false && c>0){
+	a=-g;
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);
 	document.getElementById("naves").src="img/nave_con_fuego.png";
 	document.getElementById("alienigena").src="img/Alienigena_con_pelo.png";
 	}
-	if(c<=0){
-    motorOff();
-	}		
+		
 }
 function motorOff(){	
 	a=g;
@@ -119,7 +121,6 @@ function motorOff(){
 	if(explotar==false){
 	document.getElementById("naves").src="img/nave_sin_fuego.png";
 	document.getElementById("alienigena").src="img/Alienigena.png";
-	encendido=false;
 	}
 	timerFuel=null;
 }
@@ -129,6 +130,9 @@ function actualizarFuel(){
 	if (c < 0 ){
 	c = 0;	
 	} 
+	if(c<=0){
+    motorOff();
+	}	
 	if(pausa==true){
 		c=100;
 	}
@@ -226,17 +230,12 @@ facil.onclick=function(){
 }
 
 function apretarAlien(){
-var click=1;
-document.getElementById("alien").onclick=function(){
-click++;	
-if(click%2==0){
-motorOn();
+document.getElementById("alien").onmousedown=function(){	
+motorOn();	
 }
-
-else{
+document.getElementById("alien").onmouseup=function(){	
 motorOff();
 }
-}  
 }
 
 
