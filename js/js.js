@@ -111,7 +111,6 @@ function motorOn(){
 	a=-g;
 	timerFuel=setInterval(function(){ actualizarFuel(); }, 10);
 	document.getElementById("naves").src="img/nave_con_fuego.png";
-	document.getElementById("alienigena").src="img/Alienigena_con_pelo.png";
 	}
 		
 }
@@ -235,6 +234,7 @@ document.getElementById("alien").onclick=function(){
 click++;	
 if(click%2==0){
 motorOn();		
+document.getElementById("alienigena").src="img/Alienigena_con_pelo.png";
 }	
 else{
 motorOff();	
