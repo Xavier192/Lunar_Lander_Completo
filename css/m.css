@@ -1,30 +1,40 @@
-body,html
-{height:100%;padding:0px;margin:0px;}
+body,html{
+	height:100%;padding:0px;margin:0px;
+}
 body{
-background-image: url("../img/fondo.jpg");
-background-position:center;
-background-size:cover;
+	background-image: url("../img/fondo.jpg");
+	background-position:center;
+	background-size:cover;
 }
 
-.a{width:100%;height:90px;overflow:hidden;position:fixed;top:0px}
+.a{
+	width:100%;height:90px;overflow:hidden;position:fixed;top:0px
+}
 
 
-.b{width:100%;height:100%;overflow:hidden;}
+.b{
+	width:100%;height:100%;overflow:hidden;
+}
 
 
-.cposition{position:fixed;top:0px;bottom:0px;left:0px;right:0px;display:none;z-index:2}
+.cposition{
+	position:fixed;top:0px;bottom:0px;left:0px;right:0px;display:none;z-index:2
+}
 
 
-.d{position:fixed;bottom:0px;height:12.8%;width:100%;z-index:1;}
+.d{
+	position:fixed;bottom:0px;height:12.8%;width:100%;z-index:0;
+}
 
 
-#nave{text-align:center;position:fixed;top:10%;width:100%;height:20%;z-index:1;}
+#nave{
+	text-align:center;position:fixed;top:10%;width:100%;height:20%;z-index:1;
+}
 
 
-#nave img{height:100%;}
-#cpanel{}
-#hidem,#showm{display:none;}
-
+#nave img{
+	height:100%;
+}
 #cpanel{
 	display:none;
 }
@@ -52,7 +62,7 @@ background-size:cover;
 	cursor:pointer;
 }
 #menu div:active{
-transform:scale(0.96);
+	transform:scale(0.96);
 }
 #menu div:hover{
 	background-color:#231B5D;
@@ -86,10 +96,10 @@ transform:scale(0.96);
 }
 
 #menuDificultad div:active{
-transform:scale(0.96);
+	transform:scale(0.96);
 }
 #menuDificultad div:hover{
-background-color:#231B5D;
+	background-color:#231B5D;
 }
 
 #botonera{
@@ -98,9 +108,7 @@ background-color:#231B5D;
 	height:20%;
 	right:0%;
 	top:0%;
-	z-index:0;
 	z-index:1;
-
 }
 #botonera img:hover{
 	transform:scale(1.1);
@@ -109,18 +117,18 @@ background-color:#231B5D;
 	transform:scale(1);
 }
 #reiniciar_img{
-position:absolute;
-height:55%;
-top:70%;
-right:5%;
-transition: all .2s ease-in-out;
+	position:absolute;
+	height:55%;
+	top:70%;
+	right:5%;
+	transition: all .2s ease-in-out;
 }
 #pausa_img{
-position:absolute;
-height:57.5%;
-top:14%;
-right:5%;
-transition: all .2s ease-in-out;
+	position:absolute;
+	height:57.5%;
+	top:14%;
+	right:5%;
+	transition: all .2s ease-in-out;
 }
 
 #barraFuel{
@@ -130,13 +138,11 @@ transition: all .2s ease-in-out;
 	top:10%;
 	left:0%;
 }
-#barraFuel img{
-	
-}
+
 #barra_fuel_img{
-position:absolute;
-height:70%;
-left:25%;	
+	position:absolute;
+	height:70%;
+	left:25%;	
 }
 #movimiento{
 	position:relative;
@@ -158,17 +164,15 @@ left:25%;
 	left:47%;
 }
 #cuentakilometros_img{
-position:absolute;
-height:50%;
-right:0%;
-
+	position:absolute;
+	height:50%;
+	right:0%;
 }
 #aguja{
 	position:relative;
 	height:30%;
 	right:40%;
 	bottom:-10%;
-
 }
 
 #cuentakilometros{
@@ -202,44 +206,76 @@ right:0%;
 	cursor:pointer;
 }
 .boton_volver:hover{
-background-color:#231B5D;
+	background-color:#231B5D;
 }
 .boton_volver:active{
-transform:scale(0.96);
+	transform:scale(0.96);
 }
 #invisible{
-position:absolute;
-width:100%;
-height:100%;
-z-index:2;
-right:0%;
-top:0%;
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:2;
+	right:0%;
+	top:0%;
 }
 #instrucciones{
-position:absolute;
-width:90%;
-text-align:center;
-border:solid 10px #ff6c00;
-margin-bottom:7%;
-left:0%;
-color:#53ff1a;
-box-shadow:3px 3px 20px #bd7233;
-border-radius:10% 10%;
-z-index:4;
-padding:1%;
-background-color:#020140;
-top:17%;
+	position:absolute;
+	width:90%;
+	text-align:center;
+	border:solid 10px #ff6c00;
+	margin-bottom:7%;
+	left:0%;
+	color:#53ff1a;
+	box-shadow:3px 3px 20px #bd7233;
+	border-radius:10% 10%;
+	z-index:4;
+	padding:1%;
+	background-color:#020140;
+	top:17%;
+}
+#pantallaVictoria{
+	position:absolute;
+	width:80%;	
+	text-align:center;
+	border:solid 10px #ff6c00;
+	margin-bottom:7%;
+	left:5%;
+	color:#53ff1a;
+	border-radius:10% 10%;
+	box-shadow:3px 3px 20px #bd7233;
+	z-index:2;
+	padding:1%;
+	background-color:#020140;
+	top:25%;
+	display:none;
+}
+#pantallaDerrota{
+	position:absolute;
+	width:70%;	
+	text-align:center;
+	border:solid 10px #ff6c00;
+	margin-bottom:7%;
+	left:15%;
+	color:#53ff1a;
+	border-radius:10% 10%;
+	box-shadow:3px 3px 20px #bd7233;
+	z-index:2;
+	padding:1%;
+	background-color:#020140;
+	top:25%;
+	display:none;
 }
 #alien{
-position:absolute;
-width:10%;
-height:30%;
-top:65.5%;
-left:5%;
-z-index:2;
+	position:absolute;
+	width:10%;
+	height:30%;
+	top:65.5%;
+	left:2%;
+	z-index:2;
 }
 #alien img{
-height:80%;
+	height:80%;
 }
 #alien_invisible{
 	display:none;
@@ -249,32 +285,45 @@ a{
 	color:#53ff1a;
 }
 @media only screen and (max-height: 400px){
-#alien img{
-	height:150%;
-}
-#alien{
-top:44.5%;	
-}
-#reiniciar_img{
-height:100%;
-top:110%;	
-}
-#pausa_img{
-	height:105%;
-}
-#barra_fuel_img{
-	height:70%;
+	#alien img{
+		height:140%;
+	}
+	#alien{
+		top:48.5%;
+	}
+	#reiniciar_img{
+		height:100%;
+		top:110%;	
+	}
+	#pausa_img{
+		height:105%;
+	}
+	#barra_fuel_img{
+		height:70%;
 
-}
-#cuentakilometros_img{
-	height:100%;
-}
-#aguja{
-	height:60%;
-	bottom:-15%;
-}
-#menu{
-	top:0%;
-}
+	}
+	#cuentakilometros_img{
+		height:100%;
+	}
+	#aguja{
+		height:60%;
+		bottom:-18%;
+	}
+	#menu{
+		top:0%;
+	}
+	#instrucciones{
+		top:0%;
+	}
+	#about{
+		top:0%;
+	}
+	#menuDificultad div{
+		margin:2%;
+
+	}
+	#menuDificultad{
+		top:0%;
+	}
 }
 
