@@ -11,7 +11,7 @@ https://rawgit.com/Xavier192/Lunar_Lander_Completo/master/index.html
 -La se encuentra con un límite antes de salir de la pantalla. 
 -Al acelerar con cualquier tecla (no click) el alien de la esquina izquierda se transforma en super saiyan.  
 -Dos botones principales reiniciar y pausa, pausa pausa el juego y abre un menú con opciones.
-##### Opciones del menú:
+#### Opciones del menú:
 ##### Continuar:  
 Continua con el juego en el punto en el que lo pausamos.
 ##### Instrucciones:
