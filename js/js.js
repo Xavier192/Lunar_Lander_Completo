@@ -218,6 +218,7 @@ function funcionalidadGeneral(){//Permite arrancar los métodos para que muchas 
 	mostrarMenuDif();
 	dificultades();
 	apretarAlien();
+	salirPagina();
 }
 function dificultades(){//Permite elegir las dificultades y cambia de color la elegida.
 	var facil=document.getElementById("Facil");
@@ -273,4 +274,21 @@ function vImpactos(){
 	vImpacto.innerHTML=velImpacto.toFixed(2);
 	velImpacto2=v;
 	vImpacto2.innerHTML=velImpacto2.toFixed(2);
+}
+
+function salirPagina(){
+	var con;
+	document.getElementById("About").onclick=function(){
+	    con=confirm("Estas a punto de salir de la página, ¿seguro que quieres salir?");
+		if(con==true){
+        location.replace("About.html")
+		}
+	}
+	document.getElementById("Instrucciones").onclick=function(){
+		con=confirm("Estás a punto de salir de la página. ¿Seguro que quieres salir?");
+		if(con==true){
+        location.replace("Instrucciones.html")
+		}
+	}
+
 }
