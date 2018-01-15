@@ -23,7 +23,8 @@ Redirige hacia otra página donde se muestran las instrucciones del juego no sin
 Redirige hacia otra página donde se muestra el about con los datos del autor, la asignatura y el colegio.  
 ##### Dificultad:  
 Nos abre un menú con diferentes dificultades y lo que implican (reducciones en la velocidad máxima de impacto).
-
+##### Botones de volver:  
+Permiten regresar al juego en el caso de las Instrucciones o del About o en el caso de la dificultad volver al menú principal.   
 ### Versión móvil:  
 ##### Tareas realizadas:
 -El alien ha sido habilitado con la finalidad de presionarlo con el dedo y encender el motor de la nave, para apagarlo volver a presionarlo.    
