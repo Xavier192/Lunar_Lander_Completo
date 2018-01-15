@@ -2,9 +2,9 @@
 ## Enlace al proyecto:
 https://rawgit.com/Xavier192/Lunar_Lander_Completo/master/index.html  
 
-## Autor:Xavier Lliteras Morell.  
+## Autor: Xavier Lliteras Morell.  
 ## Características técnicas del proyecto:
-#### Versión de escritorio (ordenador).
+### Versión de escritorio (ordenador).
  ##### Tareas realizadas:  
 -Se han respetado los marcadores originales pero modificando su color y forma.
 -Se ha añadido un marcador de intentos fallidos.
