@@ -26,11 +26,11 @@ Nos abre un menú con diferentes dificultades y lo que implican (reducciones en 
 
 ### Versión móvil:  
 ##### Tareas realizadas:
--El alien ha sido habilitado con la finalidad de presionarlo con el dedo y encender el motor de la nave, para apagarlo volver a presionarlo.  
--Los marcadores de velocidad y fuel han sido convertidos a barra y cuentakilometros respectivamente.
--Los menús y opciones quedan idénicos a la versión de escritorio.
--Mensajes de aterrizaje idénticos a la versión de escritorio.
--Mismo gif de impacto.
+-El alien ha sido habilitado con la finalidad de presionarlo con el dedo y encender el motor de la nave, para apagarlo volver a presionarlo.    
+-Los marcadores de velocidad y fuel han sido convertidos a barra y cuentakilometros respectivamente.  
+-Los menús y opciones quedan idénicos a la versión de escritorio.  
+-Mensajes de aterrizaje idénticos a la versión de escritorio.  
+-Mismo gif de impacto.  
 
 
 
